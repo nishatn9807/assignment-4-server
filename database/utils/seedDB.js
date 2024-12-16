@@ -17,7 +17,8 @@ const seedDB = async () => {
 	const dummy_campus2 = await Campus.create({
 		name: "Queens College",
 		address: "65-30 Kissena Blvd, Queens, NY 11367",
-		description: "This is a school in Queens, New York."
+		description: "This is a school in Queens, New York.",
+		imageUrl: 'https://assets.vogue.com/photos/60acfc4e3150cbc8d304e41b/master/w_2560%2Cc_limit/Screen%2520Shot%25202021-05-25%2520at%25209.31.24%2520AM.png',
 	});
 	// Create a new campus
 	const dummy_campus3 = await Campus.create({
@@ -30,11 +31,16 @@ const seedDB = async () => {
 	const dummy_student = await Student.create({
 		firstname: "Joe",
       lastname: "Smith",
+	  email: "gg@gmail.com",
+	  imageUrl: 'https://assets.vogue.com/photos/60acfc4e3150cbc8d304e41b/master/w_2560%2Cc_limit/Screen%2520Shot%25202021-05-25%2520at%25209.31.24%2520AM.png',
+	
 	});
 	// Create a new student for a campus
 	const dummy_student2 = await Student.create({
 		firstname: "Mary",
       lastname: "Johnson",
+	  	  email: "gg@gmail.com",
+		  imageUrl: 'https://assets.vogue.com/photos/60acfc4e3150cbc8d304e41b/master/w_2560%2Cc_limit/Screen%2520Shot%25202021-05-25%2520at%25209.31.24%2520AM.png',
 	});
 
 	// Add students to campuses
