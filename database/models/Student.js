@@ -24,7 +24,7 @@ const Student = db.define("student", {
   },
   imageUrl: {
     type: Sequelize.STRING,
-    defaultValue: 'https://via.placeholder.com/150',
+    defaultValue: 'https://cdn-icons-png.flaticon.com/512/847/847969.png',
     allowNull: true
   },
   gpa: {

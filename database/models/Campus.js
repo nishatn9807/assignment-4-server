@@ -30,7 +30,12 @@ const Campus = db.define("campus", {
   description: {
     type: Sequelize.TEXT,
     allowNull: true,
-  }
+  },
+    imageUrl: {
+      type: Sequelize.STRING,
+      defaultValue: 'https://cdn.prod.website-files.com/63dd388b87532047a1725f8f/6734e5a0cc1c56b124d6ecc3_campus-shot.jpg.webp',
+      allowNull: true
+    },
 });
 
 // Export the campus model
